@@ -2,24 +2,19 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container">
             <router-link class="navbar-brand" v-if="!app.user" to="/">
-                <div>
+                <!-- <div>
                     <img
                         src="/images/logo.jpg"
                         class="pr-3"
                         style="height:50px; "
                         alt
                     />
-                </div>
+                </div> -->
             </router-link>
 
             <router-link class="navbar-brand" v-if="app.user" to="/Home">
                 <div>
-                    <img
-                        src="/images/logo.jpg"
-                        class="pr-3"
-                        style="height:50px; "
-                        alt
-                    />
+                    WIT
                 </div>
             </router-link>
 
@@ -101,5 +96,9 @@ export default {
 <style scoped>
 .navbar {
     box-shadow: none;
+}
+.dropdown-menu {
+    background: white;
+    box-shadow: 0px 1px 7px -4px rgba(61, 61, 61, 1);
 }
 </style>

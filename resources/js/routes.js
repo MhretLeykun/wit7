@@ -1,5 +1,5 @@
 import Home from "./components/Home";
-import Create from "./pages/profile/Create";
+import Profile from "./pages/profile/Profile";
 import Welcomeform from "./pages/Welcomeform";
 import Welcome from "./Welcome";
 import Login from "./pages/Login";
@@ -13,13 +13,8 @@ export default [
     },
     {
         path: "/profile",
-        name: "Create",
-        component: Create
-    },
-    {
-        path: "/create",
-        name: "Create",
-        component: Create
+        name: "Profile",
+        component: Profile
     },
     {
         path: "/Home",

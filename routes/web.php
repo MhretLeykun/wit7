@@ -20,7 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/create', 'HomeController@index')->name('create');
+Route::get('/profile', 'HomeController@index')->name('profile');
 
 
 Route::prefix('auth')->group(function() {
@@ -31,5 +31,4 @@ Route::prefix('auth')->group(function() {
 });
 
 Route::get('/profile/{user}', 'ProfilesController@init');
-// Route::get('/profiles', 'ProfilesController@show');
-Route::get('/profile', 'ProfilesController@show');
+

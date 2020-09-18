@@ -9,13 +9,14 @@ class ProfilesController extends Controller
 {
     public function init($user)
     {
-        $user  = \App\User::find($user);
+        $user  = \App\Profile::find($user);
         return response()->json(['user' => $user], 200);
+        // return response()->json(['profile' => $user->profile], 200);
     }
     public function show()
     {
-       $user = Auth::user();
-    //    return response()->json(['user' => $user], 200);
+       $user = \App\Profile::findOrfail(1);
+       return response()->json(['user' => $user], 200);
     }
     public function index(Request $request)
     {

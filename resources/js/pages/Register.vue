@@ -385,7 +385,7 @@ $displacement: 3px;
     margin-top: 7rem;
 }
 .left {
-    width: 220px;
+    width: 400px;
     height: auto;
     min-height: 100%;
     position: relative;
@@ -398,6 +398,7 @@ $displacement: 3px;
         width: auto;
         margin: 20px;
     }
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
 }
 
 .logo {

@@ -21,7 +21,6 @@
                         autocomplete="off"
                         v-model="username"
                     />
-                    <label for="email">Email:</label>
                 </div>
                 <div class="floating-label">
                     <input
@@ -32,7 +31,6 @@
                         autocomplete="off"
                         v-model="password"
                     />
-                    <label for="password">Password:</label>
                 </div>
                 <button>Sign In</button>
                 <router-link to="/register">Sign Up</router-link>
@@ -248,7 +246,7 @@ input {
         }
     }
     input:not(:placeholder-shown) {
-        padding: 28px 0px 12px 0px;
+        // padding: 28px 0px 12px 0px;
     }
     input:not(:placeholder-shown) + label {
         transform: translateY(-10px);
